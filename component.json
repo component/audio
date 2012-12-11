@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "component/domify": "*",
-    "component/event": "*"
+    "component/event": "*",
+    "component/autoscale-canvas": "*"
   },
   "development": {},
   "license": "MIT",
