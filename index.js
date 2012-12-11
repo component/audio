@@ -26,7 +26,19 @@ function Audio(el) {
   this.el = domify(html)[0];
   el.parentNode.insertBefore(this.el, this.audio);
   event.bind(this.el, 'click', this.toggle.bind(this));
+  event.bind(el, 'timeupdate', this.ontimeupdate.bind(this));
 }
+
+/**
+ * Update playback process indicator.
+ *
+ * @api private
+ */
+
+Audio.prototype.ontimeupdate = function(){
+  var el = this.audio;
+  var p = el.currentTime / el.duration * 100;
+};
 
 /**
  * Toggle play state.
