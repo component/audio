@@ -1,5 +1,12 @@
 
 /**
+ * Module dependencies.
+ */
+
+var domify = require('domify')
+  , html = require('./template');
+
+/**
  * Expose `Audio`.
  */
 
@@ -14,5 +21,6 @@ module.exports = Audio;
 
 function Audio(el) {
   if (!(this instanceof Audio)) return new Audio(el);
-  this.el = el;
+  this.audio = el;
+  this.el = domify(html)[0];
 }

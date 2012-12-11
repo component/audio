@@ -4,7 +4,9 @@
   "description": "Sexy audio player (requires audio tag support)",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/domify": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [
