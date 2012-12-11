@@ -20,6 +20,7 @@ function Progress() {
   this.el = document.createElement('canvas');
   this.ctx = this.el.getContext('2d');
   this.color = '#00bbff';
+  this.shadowColor = 'rgba(0, 187, 255, 0.3)';
   this.fontSize = 12;
   this.font = 'helvetica, arial, sans-serif';
   this.size(52);
@@ -76,6 +77,10 @@ Progress.prototype.draw = function(ctx){
 
   var angle = Math.PI * 2 * (percent / 100);
   ctx.clearRect(0, 0, size, size);
+
+  // shadow
+  ctx.shadowColor = this.shadowColor;
+  ctx.shadowBlur = 10;
 
   // outer circle
   ctx.strokeStyle = this.color;
