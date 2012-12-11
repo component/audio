@@ -1,0 +1,17 @@
+{
+  "name": "audio",
+  "repo": "component/audio",
+  "description": "Sexy audio player (requires audio tag support)",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "audio.css"
+  ]
+}
