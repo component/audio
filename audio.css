@@ -9,5 +9,9 @@
   border-radius: 50%;
   box-shadow: 0 0 0 2px #f7f7f7;
   text-decoration: none;
+  color: #494949;
+}
+
+.audio-play:hover {
   color: #1b1b1b;
 }
