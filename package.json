@@ -1,0 +1,19 @@
+{
+  "name": "audio-component",
+  "description": "Sexy audio player (requires audio tag support)",
+  "version": "0.0.1",
+  "keywords": ["audio"],
+  "dependencies": {
+    "domify": "*",
+    "event-component": "*",
+    "autoscale-canvas": "*"
+  },
+  "component": {
+    "scripts": {
+      "audio/index.js": "index.js",
+      "audio/progress.js": "progress.js",
+      "audio/template.js": "template.js"
+    },
+    "styles": ["audio.css"]
+  }
+}
