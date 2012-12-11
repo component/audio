@@ -13,6 +13,7 @@
   "license": "MIT",
   "scripts": [
     "index.js",
+    "progress.js",
     "template.js"
   ],
   "styles": [
