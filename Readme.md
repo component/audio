@@ -20,6 +20,20 @@
 </script>
 ```
 
+## API
+
+### .toggle()
+
+  Toggle play state.
+
+### .play()
+
+  Start playback.
+
+### .pause()
+
+  Pause playback.
+
 ## License
 
   MIT
