@@ -1,4 +1,14 @@
 
+.audio {
+  position: relative;
+}
+
+.audio > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .audio-play {
   display: block;
   border: 1px solid #ddd;

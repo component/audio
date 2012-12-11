@@ -5,7 +5,8 @@
 
 var domify = require('domify')
   , event = require('event')
-  , html = require('./template');
+  , html = require('./template')
+  , Progress = require('./progress');
 
 /**
  * Expose `Audio`.
@@ -24,6 +25,8 @@ function Audio(el) {
   if (!(this instanceof Audio)) return new Audio(el);
   this.audio = el;
   this.el = domify(html)[0];
+  this.progress = new Progress;
+  this.el.appendChild(this.progress.el);
   el.parentNode.insertBefore(this.el, this.audio);
   event.bind(this.el, 'click', this.toggle.bind(this));
   event.bind(el, 'timeupdate', this.ontimeupdate.bind(this));
