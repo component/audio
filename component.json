@@ -2,8 +2,8 @@
   "name": "audio",
   "repo": "component/audio",
   "description": "Sexy audio player (requires audio tag support)",
-  "version": "0.0.1",
-  "keywords": [],
+  "version": "0.0.2",
+  "keywords": ["audio", "player", "music"],
   "dependencies": {
     "component/domify": "0.1.0",
     "component/event": "*",

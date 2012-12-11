@@ -1,7 +1,7 @@
 {
   "name": "audio-component",
   "description": "Sexy audio player (requires audio tag support)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["audio"],
   "dependencies": {
     "domify": "0.1.0",
