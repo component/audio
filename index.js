@@ -27,7 +27,6 @@ function Audio(el) {
   this.el = domify(html)[0];
   this.progress = new Progress;
   this.el.appendChild(this.progress.el);
-  this.progress.update(70);
   el.parentNode.insertBefore(this.el, this.audio);
   event.bind(this.el, 'click', this.toggle.bind(this));
   event.bind(el, 'timeupdate', this.ontimeupdate.bind(this));
@@ -41,7 +40,8 @@ function Audio(el) {
 
 Audio.prototype.ontimeupdate = function(){
   var el = this.audio;
-  var p = el.currentTime / el.duration * 100;
+  var n = el.currentTime / el.duration * 100;
+  this.progress.update(n);
 };
 
 /**
