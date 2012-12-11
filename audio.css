@@ -6,3 +6,7 @@
   border-radius: 50%;
   box-shadow: 0 0 0 2px #f7f7f7;
 }
+
+.audio-play::after {
+  content: '▶'
+}
