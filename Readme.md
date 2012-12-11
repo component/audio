@@ -9,9 +9,16 @@
 
     $ component install component/audio
 
-## API
+## Example
 
-   
+```html
+<audio src="https://cloudup-files.s3.amazonaws.com/1355244692571.845b8dfc324b7bd3c548e8c06380908e"></audio>
+<script>
+  var audio = require('audio');
+  var el = document.querySelector('audio');
+  audio(el);
+</script>
+```
 
 ## License
 
