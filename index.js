@@ -27,6 +27,7 @@ function Audio(el) {
   this.el = domify(html)[0];
   this.progress = new Progress;
   this.el.appendChild(this.progress.el);
+  this.progress.update(70);
   el.parentNode.insertBefore(this.el, this.audio);
   event.bind(this.el, 'click', this.toggle.bind(this));
   event.bind(el, 'timeupdate', this.ontimeupdate.bind(this));

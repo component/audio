@@ -22,7 +22,7 @@ function Progress() {
   this.color = '#00bbff';
   this.fontSize = 12;
   this.font = 'helvetica, arial, sans-serif';
-  this.size(50);
+  this.size(52);
 }
 
 /**
@@ -78,25 +78,10 @@ Progress.prototype.draw = function(ctx){
   ctx.clearRect(0, 0, size, size);
 
   // outer circle
-  ctx.strokeStyle = '#9f9f9f';
+  ctx.strokeStyle = this.color;
   ctx.beginPath();
   ctx.arc(x, y, rad, 0, angle, false);
   ctx.stroke();
-
-  // inner circle
-  ctx.strokeStyle = '#eee';
-  ctx.beginPath();
-  ctx.arc(x, y, rad - 1, 0, angle, true);
-  ctx.stroke();
-
-  // text
-  var text = (percent | 0) + '%'
-    , w = ctx.measureText(text).width;
-
-  ctx.fillText(
-      text
-    , x - w / 2 + 1
-    , y + fontSize / 2 - 1);
 
   return this;
 };
