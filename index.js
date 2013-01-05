@@ -50,7 +50,8 @@ Audio.prototype.ontimeupdate = function(){
  * @api public
  */
 
-Audio.prototype.toggle = function(){
+Audio.prototype.toggle = function(e){
+  e.preventDefault();
   if (this.audio.paused) {
     this.play();
   } else {
