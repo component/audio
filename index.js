@@ -67,6 +67,7 @@ Audio.prototype.toggle = function(e){
 
 Audio.prototype.play = function(){
   this.audio.play();
+  this.el.className = 'audio playing';
 };
 
 /**
@@ -77,5 +78,6 @@ Audio.prototype.play = function(){
 
 Audio.prototype.pause = function(){
   this.audio.pause();
+  this.el.className = 'audio paused';
 };
 
