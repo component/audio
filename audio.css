@@ -23,6 +23,14 @@
   color: #494949;
 }
 
+.audio a:before {
+  content: "\25B6";
+}
+
+.audio.playing a:before {
+  content: "\25AE\25AE";
+}
+
 .audio-play:hover {
   color: #1b1b1b;
   background: #fbfbfb;
