@@ -2,7 +2,9 @@
   "name": "audio-component",
   "description": "Sexy audio player (requires audio tag support)",
   "version": "0.1.0",
-  "keywords": ["audio"],
+  "keywords": [
+    "audio"
+  ],
   "dependencies": {
     "domify": "0.1.0",
     "event-component": "*",
@@ -14,6 +16,12 @@
       "audio/progress.js": "progress.js",
       "audio/template.js": "template.js"
     },
-    "styles": ["audio.css"]
+    "styles": [
+      "audio.css"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/audio.git"
   }
 }
