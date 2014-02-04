@@ -30,6 +30,7 @@ function Audio(el) {
   el.parentNode.insertBefore(this.el, this.audio);
   event.bind(this.el, 'click', this.toggle.bind(this));
   event.bind(el, 'timeupdate', this.ontimeupdate.bind(this));
+  event.bind(el, 'ended', this.onended.bind(this));
 }
 
 /**
@@ -42,6 +43,16 @@ Audio.prototype.ontimeupdate = function(){
   var el = this.audio;
   var n = el.currentTime / el.duration * 100;
   this.progress.update(n);
+};
+
+/**
+ * Return to initial state when audio ends.
+ *
+ * @api private
+ */
+Audio.prototype.onended = function(){
+  this.el.className = 'audio stopped';
+  this.progress.update(0);
 };
 
 /**
@@ -71,7 +82,7 @@ Audio.prototype.play = function(){
 };
 
 /**
- * Start playing the audio.
+ * Pause playback of audio.
  *
  * @api public
  */
